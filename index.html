@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Master — Loan Advisory, Thrissur | Compare banks before you borrow</title>
+<meta name="description" content="Loan Master is a registered DSA loan consultancy in Thrissur, Kerala. We check your profile and eligibility, compare offers across banks and NBFCs, and help you apply where you get the better deal.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FinancialService",
+  "name":"Loan Master",
+  "description":"Loan advisory and registered DSA in Thrissur, Kerala. Eligibility check, bank comparison and application support for all loan types.",
+  "telephone":"+917356043958",
+  "areaServed":"Kerala, India",
+  "availableLanguage":["en","ml"],
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"2nd Floor, Kalliyath Royal Square, Palace Road, Chembukkav",
+    "addressLocality":"Thrissur",
+    "addressRegion":"Kerala",
+    "postalCode":"680020",
+    "addressCountry":"IN"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":10.5284,"longitude":76.1796},
+  "openingHoursSpecification":[{
+    "@type":"OpeningHoursSpecification",
+    "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens":"09:30","closes":"19:00"
+  }]
+}
+</script>
+<style>
+:root{
+  --ink:#0D262C;
+  --petrol:#12414A;
+  --petrol-soft:#1B5A65;
+  --brass:#B8862F;
+  --brass-lite:#E3B65C;
+  --paper:#EDEEE7;
+  --paper-2:#F7F7F2;
+  --white:#FFFFFF;
+  --wa:#1FA855;
+  --line:rgba(13,38,44,.14);
+  --muted:#4D6169;
+
+  --display:'Fraunces',Georgia,serif;
+  --body:'Public Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+
+  --maxw:1160px;
+  --r:14px;
+}
+html[data-lang="ml"] body{font-family:'Noto Sans Malayalam',var(--body);}
+html[data-lang="ml"] .display{font-family:'Noto Sans Malayalam',var(--display);letter-spacing:0;}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.display{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.08}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--brass);font-weight:500;
+}
+html[data-lang="ml"] .eyebrow{font-family:'Noto Sans Malayalam',var(--mono);letter-spacing:.04em;text-transform:none}
+
+/* ---------- NAV ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(237,238,231,.88);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);flex-shrink:0}
+.mark{width:38px;height:38px;flex-shrink:0}
+.brand b{font-family:var(--display);font-size:1.32rem;font-weight:700;letter-spacing:-.02em;display:block;line-height:1.1}
+.brand span{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.navlinks{display:flex;gap:28px;align-items:center}
+.navlinks a{color:var(--petrol);text-decoration:none;font-size:.92rem;font-weight:500;opacity:.85}
+.navlinks a:hover{opacity:1;color:var(--brass)}
+.navright{display:flex;align-items:center;gap:12px}
+.langtoggle{
+  display:flex;border:1px solid var(--line);border-radius:99px;overflow:hidden;background:var(--white)
+}
+.langtoggle button{
+  border:0;background:transparent;padding:7px 13px;cursor:pointer;font-size:.78rem;font-weight:600;
+  color:var(--muted);font-family:var(--body)
+}
+.langtoggle button:nth-child(2){font-family:'Noto Sans Malayalam',sans-serif}
+.langtoggle button[aria-pressed="true"]{background:var(--petrol);color:var(--white)}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;padding:12px 22px;border-radius:99px;
+  font-weight:600;font-size:.93rem;text-decoration:none;border:0;cursor:pointer;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;font-family:inherit
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 18px rgba(31,168,85,.28)}
+.btn-call{background:var(--petrol);color:#fff;box-shadow:0 6px 18px rgba(18,65,74,.24)}
+.btn-ghost{background:transparent;color:var(--petrol);border:1.5px solid var(--petrol)}
+.btn-ghost:hover{background:var(--petrol);color:#fff}
+.menubtn{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer}
+.menubtn svg{display:block}
+
+/* ---------- HERO ---------- */
+.hero{padding:76px 0 88px;position:relative;overflow:hidden}
+.hero:before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(900px 500px at 88% 8%,rgba(184,134,47,.13),transparent 60%),
+             radial-gradient(700px 500px at 5% 95%,rgba(18,65,74,.08),transparent 60%);
+  pointer-events:none
+}
+.herogrid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.4rem,5vw,3.9rem);margin:18px 0 20px}
+.hero h1 em{font-style:normal;color:var(--brass);position:relative;white-space:nowrap}
+.hero h1 em:after{
+  content:"";position:absolute;left:0;right:0;bottom:.06em;height:.13em;
+  background:var(--brass);opacity:.22;border-radius:2px
+}
+.lede{font-size:1.09rem;color:var(--muted);max-width:52ch;margin-bottom:30px}
+.herocta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.trustrow{display:flex;gap:22px;flex-wrap:wrap;padding-top:22px;border-top:1px solid var(--line)}
+.trustrow div{display:flex;align-items:center;gap:8px;font-size:.86rem;color:var(--petrol);font-weight:500}
+.trustrow svg{flex-shrink:0;color:var(--brass)}
+
+/* ---------- SIGNATURE: offer stack ---------- */
+.offerpanel{
+  background:var(--white);border-radius:22px;padding:26px;
+  box-shadow:0 28px 60px -28px rgba(13,38,44,.35),0 2px 0 rgba(255,255,255,.7) inset;
+  border:1px solid rgba(255,255,255,.9)
+}
+.op-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;gap:12px}
+.op-head h3{font-family:var(--body);font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600}
+html[data-lang="ml"] .op-head h3{text-transform:none;letter-spacing:0;font-family:'Noto Sans Malayalam',sans-serif}
+.op-case{font-family:var(--mono);font-size:.74rem;color:var(--petrol);background:var(--paper);padding:5px 10px;border-radius:7px;white-space:nowrap}
+.op-sub{font-size:.84rem;color:var(--muted);margin-bottom:18px}
+.offer{
+  display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px;
+  padding:15px 16px;border:1px solid var(--line);border-radius:13px;margin-bottom:10px;
+  background:var(--paper-2);position:relative;
+  opacity:0;transform:translateY(14px);
+  animation:rise .6s cubic-bezier(.2,.7,.3,1) forwards
+}
+.offer:nth-child(1){animation-delay:.15s}
+.offer:nth-child(2){animation-delay:.32s}
+.offer:nth-child(3){animation-delay:.49s}
+@keyframes rise{to{opacity:1;transform:translateY(0)}}
+.offer.best{
+  background:linear-gradient(100deg,#12414A,#1B5A65);border-color:var(--petrol);
+  box-shadow:0 14px 30px -14px rgba(18,65,74,.55)
+}
+.offer .bankname{font-weight:600;font-size:.97rem;display:flex;align-items:center;gap:9px}
+.offer .banksub{font-size:.76rem;color:var(--muted);margin-top:2px}
+.offer.best .bankname,.offer.best .rate{color:#fff}
+.offer.best .banksub{color:rgba(255,255,255,.72)}
+.rate{font-family:var(--mono);font-size:1.28rem;font-weight:600;color:var(--petrol);text-align:right;line-height:1.1}
+.rate small{display:block;font-size:.62rem;letter-spacing:.1em;opacity:.6;font-weight:400;margin-top:3px}
+.blob{width:26px;height:26px;border-radius:7px;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--petrol);flex-shrink:0}
+.offer.best .blob{background:var(--brass-lite);border-color:var(--brass-lite);color:#3a2a05}
+.besttag{
+  position:absolute;top:-9px;right:14px;background:var(--brass);color:#fff;
+  font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;
+  padding:3px 9px;border-radius:99px
+}
+html[data-lang="ml"] .besttag{font-family:'Noto Sans Malayalam',sans-serif;text-transform:none;letter-spacing:0}
+.op-foot{
+  margin-top:16px;padding-top:15px;border-top:1px dashed var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap
+}
+.savenum{font-family:var(--mono);font-weight:600;color:var(--petrol);font-size:.9rem}
+.savenum b{color:var(--brass);font-size:1.05rem}
+.op-note{font-size:.7rem;color:var(--muted);margin-top:12px;line-height:1.45}
+
+/* ---------- SECTION SHELL ---------- */
+section{padding:88px 0}
+.sec-head{max-width:62ch;margin-bottom:48px}
+.sec-head h2{font-size:clamp(1.85rem,3.4vw,2.7rem);margin:14px 0 14px}
+.sec-head p{color:var(--muted);font-size:1.03rem}
+.dark{background:var(--ink);color:var(--paper)}
+.dark .sec-head p{color:rgba(237,238,231,.72)}
+.dark h2,.dark h3{color:var(--paper)}
+
+/* ---------- PROCESS ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.step{padding:30px 26px 30px 0;border-right:1px solid var(--line);position:relative}
+.step:last-child{border-right:0;padding-right:0}
+.step:not(:last-child){padding-right:26px}
+.stepnum{
+  font-family:var(--mono);font-size:.72rem;color:var(--brass);letter-spacing:.14em;
+  display:block;margin-bottom:14px;font-weight:600
+}
+.step h3{font-family:var(--display);font-size:1.22rem;margin-bottom:9px;font-weight:600}
+.step p{font-size:.92rem;color:var(--muted)}
+.step:after{
+  content:"";position:absolute;top:-1px;left:0;width:0;height:3px;background:var(--brass);
+  transition:width .5s ease
+}
+.step.seen:after{width:38px}
+
+/* ---------- LOANS ---------- */
+.loangrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.loan{
+  background:var(--white);border-radius:var(--r);padding:24px 22px;border:1px solid var(--line);
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+  text-decoration:none;color:inherit;display:block
+}
+.loan:hover{transform:translateY(-5px);box-shadow:0 20px 40px -22px rgba(13,38,44,.4);border-color:var(--brass)}
+.loanicon{width:42px;height:42px;border-radius:11px;background:var(--paper);display:grid;place-items:center;margin-bottom:16px;color:var(--petrol)}
+.loan:hover .loanicon{background:var(--brass);color:#fff}
+.loan h3{font-size:1.02rem;font-family:var(--body);font-weight:600;margin-bottom:5px}
+.loan p{font-size:.83rem;color:var(--muted);line-height:1.5}
+
+/* ---------- WHY ---------- */
+.whygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.why{
+  background:rgba(255,255,255,.05);border:1px solid rgba(237,238,231,.14);
+  border-radius:var(--r);padding:30px 26px
+}
+.why .n{font-family:var(--mono);color:var(--brass-lite);font-size:.75rem;letter-spacing:.12em;margin-bottom:16px;display:block}
+.why h3{font-family:var(--display);font-size:1.28rem;margin-bottom:10px}
+.why p{color:rgba(237,238,231,.7);font-size:.93rem}
+
+/* ---------- CHECK / LEAD FORM ---------- */
+.checkwrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.formcard{background:var(--white);border-radius:20px;padding:32px;border:1px solid var(--line);box-shadow:0 24px 50px -30px rgba(13,38,44,.4)}
+.field{margin-bottom:17px}
+.field label{display:block;font-size:.8rem;font-weight:600;margin-bottom:7px;color:var(--petrol)}
+.field input,.field select{
+  width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;
+  font-family:inherit;font-size:.95rem;background:var(--paper-2);color:var(--ink)
+}
+html[data-lang="ml"] .field input,html[data-lang="ml"] .field select{font-family:'Noto Sans Malayalam',sans-serif}
+.field input:focus,.field select:focus{outline:2px solid var(--brass);outline-offset:1px;background:#fff}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.formcard .btn-wa{width:100%;justify-content:center;padding:15px}
+.formnote{font-size:.75rem;color:var(--muted);text-align:center;margin-top:13px}
+.checkpoints{list-style:none}
+.checkpoints li{display:flex;gap:13px;margin-bottom:19px;font-size:.96rem}
+.checkpoints svg{flex-shrink:0;color:var(--brass);margin-top:3px}
+.checkpoints b{display:block;margin-bottom:2px}
+.checkpoints span{color:var(--muted);font-size:.88rem}
+
+/* ---------- FEE STRIP ---------- */
+.feestrip{
+  background:linear-gradient(105deg,var(--petrol),var(--petrol-soft));color:#fff;
+  border-radius:20px;padding:44px 44px;display:grid;grid-template-columns:1.2fr auto;
+  gap:32px;align-items:center
+}
+.feestrip h2{font-size:clamp(1.5rem,2.6vw,2.05rem);margin-bottom:12px;color:#fff}
+.feestrip p{color:rgba(255,255,255,.8);max-width:56ch;font-size:.98rem}
+.feestrip .btn-wa{box-shadow:0 8px 26px rgba(0,0,0,.28)}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{
+  cursor:pointer;font-weight:600;font-size:1.03rem;list-style:none;
+  display:flex;justify-content:space-between;gap:20px;align-items:flex-start;color:var(--petrol)
+}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:var(--mono);color:var(--brass);font-size:1.3rem;line-height:1;flex-shrink:0}
+details[open] summary:after{content:"–"}
+details p{margin-top:12px;color:var(--muted);font-size:.95rem;max-width:70ch}
+
+/* ---------- CONTACT ---------- */
+.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.ccard{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.ccard .eyebrow{margin-bottom:12px;display:block}
+.ccard a{color:var(--petrol);text-decoration:none;font-weight:600;font-size:1.12rem;display:block;margin-bottom:6px}
+.ccard a:hover{color:var(--brass)}
+.ccard p{font-size:.88rem;color:var(--muted)}
+.mapbox{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);height:100%;min-height:240px;background:var(--white)}
+.mapbox iframe{width:100%;height:100%;min-height:240px;border:0;display:block;filter:saturate(.85)}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--ink);color:rgba(237,238,231,.62);padding:60px 0 30px;font-size:.88rem}
+.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:var(--paper);font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:16px;font-family:var(--mono);font-weight:500}
+html[data-lang="ml"] footer h4{font-family:'Noto Sans Malayalam',sans-serif;text-transform:none;letter-spacing:0}
+footer a{color:rgba(237,238,231,.62);text-decoration:none;display:block;margin-bottom:9px}
+footer a:hover{color:var(--brass-lite)}
+.disclaimer{border-top:1px solid rgba(237,238,231,.14);padding-top:22px;font-size:.76rem;line-height:1.6;color:rgba(237,238,231,.45)}
+.footbrand b{font-family:var(--display);color:var(--paper);font-size:1.35rem;display:block;margin-bottom:10px}
+
+/* ---------- FLOAT ---------- */
+.floatwa{
+  position:fixed;right:20px;bottom:20px;z-index:80;
+  background:var(--wa);color:#fff;width:58px;height:58px;border-radius:50%;
+  display:grid;place-items:center;box-shadow:0 10px 28px rgba(31,168,85,.45);
+  text-decoration:none;transition:transform .2s ease
+}
+.floatwa:hover{transform:scale(1.08)}
+.floatwa:before{
+  content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);
+  animation:pulse 2.4s ease-out infinite
+}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.seen{opacity:1;transform:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:980px){
+  .herogrid,.checkwrap{grid-template-columns:1fr;gap:40px}
+  .steps{grid-template-columns:1fr 1fr}
+  .step{border-right:0;border-bottom:1px solid var(--line);padding-right:26px!important}
+  .loangrid{grid-template-columns:1fr 1fr}
+  .whygrid,.contactgrid,.footgrid{grid-template-columns:1fr}
+  .feestrip{grid-template-columns:1fr;padding:34px 28px}
+  .navlinks{display:none}
+  .menubtn{display:block}
+  .navlinks.open{
+    display:flex;position:absolute;top:72px;left:0;right:0;background:var(--paper-2);
+    flex-direction:column;gap:0;padding:10px 24px 20px;border-bottom:1px solid var(--line)
+  }
+  .navlinks.open a{padding:12px 0;border-bottom:1px solid var(--line);width:100%}
+  .navright .btn-call span{display:none}
+}
+@media(max-width:560px){
+  section{padding:62px 0}
+  .hero{padding:48px 0 62px}
+  .loangrid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .offerpanel{padding:20px}
+  .formcard{padding:24px 20px}
+  .trustrow{gap:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  .offer{opacity:1;transform:none}
+}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <svg class="mark" viewBox="0 0 44 44" fill="none" aria-hidden="true">
+        <rect width="44" height="44" rx="12" fill="#12414A"/>
+        <path d="M11 13v18h7.5" fill="none" stroke="#E3B65C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 31V15.5l5.5 7 5.5-7V31" fill="none" stroke="#E3B65C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span style="display:block">
+        <b>Loan Master</b>
+        <span data-en="Loan Advisory · Thrissur" data-ml="ലോൺ അഡ്വൈസറി · തൃശൂർ">Loan Advisory · Thrissur</span>
+      </span>
+    </a>
+
+    <nav class="navlinks" id="nav">
+      <a href="#how" data-en="How it works" data-ml="എങ്ങനെ പ്രവർത്തിക്കുന്നു">How it works</a>
+      <a href="#loans" data-en="Loan types" data-ml="ലോൺ തരങ്ങൾ">Loan types</a>
+      <a href="#why" data-en="Why us" data-ml="എന്തുകൊണ്ട് ഞങ്ങൾ">Why us</a>
+      <a href="#check" data-en="Free check" data-ml="സൗജന്യ പരിശോധന">Free check</a>
+      <a href="#faq" data-en="FAQ" data-ml="ചോദ്യങ്ങൾ">FAQ</a>
+    </nav>
+
+    <div class="navright">
+      <div class="langtoggle" role="group" aria-label="Language">
+        <button type="button" data-setlang="en" aria-pressed="true">EN</button>
+        <button type="button" data-setlang="ml" aria-pressed="false">മല</button>
+      </div>
+      <a href="tel:+917356043958" class="btn btn-call">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span data-en="Call now" data-ml="വിളിക്കൂ">Call now</span>
+      </a>
+      <button class="menubtn" id="menubtn" aria-label="Menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap herogrid">
+    <div>
+      <span class="eyebrow" data-en="Registered DSA · Thrissur, Kerala" data-ml="രജിസ്റ്റേഡ് DSA · തൃശൂർ, കേരളം">Registered DSA · Thrissur, Kerala</span>
+      <h1 class="display" data-en="Don't take the first loan offer. Take the &lt;em&gt;right&lt;/em&gt; one." data-ml="ആദ്യം കിട്ടുന്ന ലോൺ എടുക്കരുത്. &lt;em&gt;ശരിയായത്&lt;/em&gt; എടുക്കൂ.">Don't take the first loan offer. Take the <em>right</em> one.</h1>
+      <p class="lede" data-en="Banks quote different rates to the same person. We read your profile, check where you actually qualify, and put the offers side by side — so you borrow from the lender that costs you least." data-ml="ഒരേ വ്യക്തിക്ക് വ്യത്യസ്ത ബാങ്കുകൾ വ്യത്യസ്ത പലിശ നിരക്കാണ് നൽകുന്നത്. നിങ്ങളുടെ പ്രൊഫൈൽ പരിശോധിച്ച്, എവിടെ യോഗ്യത ലഭിക്കുമെന്ന് കണ്ടെത്തി, ഓഫറുകൾ താരതമ്യം ചെയ്ത് ഏറ്റവും കുറഞ്ഞ ചെലവിൽ ലോൺ ലഭിക്കാൻ ഞങ്ങൾ സഹായിക്കുന്നു.">Banks quote different rates to the same person. We read your profile, check where you actually qualify, and put the offers side by side — so you borrow from the lender that costs you least.</p>
+
+      <div class="herocta">
+        <a href="#" class="btn btn-wa" data-wa="Hi Loan Master, I'd like to know which bank suits my loan.">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.7 1-.9 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3 3 0 0 0-1 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.5 1.5.6a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+          <span data-en="Ask on WhatsApp" data-ml="വാട്ട്‌സ്ആപ്പിൽ ചോദിക്കൂ">Ask on WhatsApp</span>
+        </a>
+        <a href="#check" class="btn btn-ghost" data-en="Get a free eligibility check" data-ml="സൗജന്യ യോഗ്യതാ പരിശോധന">Get a free eligibility check</a>
+      </div>
+
+      <div class="trustrow">
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6z"/><path d="m9 12 2 2 4-4"/></svg><span data-en="Registered DSA partner" data-ml="രജിസ്റ്റേഡ് DSA പങ്കാളി">Registered DSA partner</span></div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span data-en="Fee told upfront, in writing" data-ml="ഫീസ് മുൻകൂട്ടി, എഴുതി നൽകും">Fee told upfront, in writing</span></div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span data-en="Malayalam & English support" data-ml="മലയാളത്തിലും ഇംഗ്ലീഷിലും സഹായം">Malayalam &amp; English support</span></div>
+      </div>
+    </div>
+
+    <!-- SIGNATURE ELEMENT -->
+    <div class="offerpanel">
+      <div class="op-head">
+        <h3 data-en="Same borrower, three banks" data-ml="ഒരേ വ്യക്തി, മൂന്ന് ബാങ്കുകൾ">Same borrower, three banks</h3>
+        <span class="op-case">₹25L · 20 yrs</span>
+      </div>
+      <p class="op-sub" data-en="Home loan · salaried · CIBIL 762" data-ml="ഭവന വായ്പ · ശമ്പളക്കാരൻ · CIBIL 762">Home loan · salaried · CIBIL 762</p>
+
+      <div class="offer">
+        <div>
+          <div class="bankname"><span class="blob">A</span><span data-en="Public sector bank" data-ml="പൊതുമേഖലാ ബാങ്ക്">Public sector bank</span></div>
+          <div class="banksub" data-en="Processing fee ₹12,500" data-ml="പ്രോസസ്സിംഗ് ഫീസ് ₹12,500">Processing fee ₹12,500</div>
+        </div>
+        <div class="rate">9.15%<small>P.A.</small></div>
+      </div>
+
+      <div class="offer best">
+        <span class="besttag" data-en="Best fit" data-ml="ഏറ്റവും അനുയോജ്യം">Best fit</span>
+        <div>
+          <div class="bankname"><span class="blob">B</span><span data-en="Private bank" data-ml="സ്വകാര്യ ബാങ്ക്">Private bank</span></div>
+          <div class="banksub" data-en="Processing fee waived" data-ml="പ്രോസസ്സിംഗ് ഫീസ് ഒഴിവാക്കി">Processing fee waived</div>
+        </div>
+        <div class="rate">8.60%<small>P.A.</small></div>
+      </div>
+
+      <div class="offer">
+        <div>
+          <div class="bankname"><span class="blob">C</span><span data-en="Housing finance co." data-ml="ഹൗസിംഗ് ഫിനാൻസ്">Housing finance co.</span></div>
+          <div class="banksub" data-en="Faster approval, higher cost" data-ml="വേഗത്തിൽ അംഗീകാരം, ഉയർന്ന ചെലവ്">Faster approval, higher cost</div>
+        </div>
+        <div class="rate">9.80%<small>P.A.</small></div>
+      </div>
+
+      <div class="op-foot">
+        <span class="savenum" data-en="Interest saved over the term: &lt;b&gt;₹2.1 lakh&lt;/b&gt;" data-ml="കാലാവധിയിൽ ലാഭിക്കുന്ന പലിശ: &lt;b&gt;₹2.1 ലക്ഷം&lt;/b&gt;">Interest saved over the term: <b>₹2.1 lakh</b></span>
+      </div>
+      <p class="op-note" data-en="Illustration only. Actual rates depend on your credit profile, income and the lender's policy on the day you apply." data-ml="ഇത് ഒരു ഉദാഹരണം മാത്രം. യഥാർത്ഥ നിരക്കുകൾ നിങ്ങളുടെ ക്രെഡിറ്റ് പ്രൊഫൈൽ, വരുമാനം, അപേക്ഷിക്കുന്ന ദിവസത്തെ ബാങ്ക് നയം എന്നിവയെ ആശ്രയിച്ചിരിക്കും.">Illustration only. Actual rates depend on your credit profile, income and the lender's policy on the day you apply.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-en="How it works" data-ml="എങ്ങനെ പ്രവർത്തിക്കുന്നു">How it works</span>
+      <h2 class="display" data-en="Four steps, and you stay in control of every one" data-ml="നാല് ഘട്ടങ്ങൾ, ഓരോന്നിലും തീരുമാനം നിങ്ങളുടേത്">Four steps, and you stay in control of every one</h2>
+      <p data-en="Nothing is applied for without your go-ahead. We only submit to a lender after you've seen the numbers and said yes." data-ml="നിങ്ങളുടെ സമ്മതമില്ലാതെ ഒരു അപേക്ഷയും നൽകില്ല. കണക്കുകൾ കണ്ട് നിങ്ങൾ സമ്മതിച്ചതിന് ശേഷം മാത്രമേ ബാങ്കിൽ അപേക്ഷ നൽകൂ.">Nothing is applied for without your go-ahead. We only submit to a lender after you've seen the numbers and said yes.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step rv">
+        <span class="stepnum">STEP 01</span>
+        <h3 class="display" data-en="Tell us the need" data-ml="ആവശ്യം പറയൂ">Tell us the need</h3>
+        <p data-en="A call or WhatsApp message. What the money is for, how much, and by when." data-ml="ഒരു ഫോൺ കോൾ അല്ലെങ്കിൽ വാട്ട്‌സ്ആപ്പ് സന്ദേശം. എന്തിനാണ് പണം, എത്ര വേണം, എപ്പോൾ വേണം.">A call or WhatsApp message. What the money is for, how much, and by when.</p>
+      </div>
+      <div class="step rv">
+        <span class="stepnum">STEP 02</span>
+        <h3 class="display" data-en="We read your profile" data-ml="പ്രൊഫൈൽ പരിശോധിക്കുന്നു">We read your profile</h3>
+        <p data-en="Income, CIBIL score, running EMIs, documents in hand. This is where we find the problems early." data-ml="വരുമാനം, CIBIL സ്കോർ, നിലവിലുള്ള EMI, കയ്യിലുള്ള രേഖകൾ. പ്രശ്നങ്ങൾ നേരത്തെ കണ്ടെത്തുന്നത് ഇവിടെയാണ്.">Income, CIBIL score, running EMIs, documents in hand. This is where we find the problems early.</p>
+      </div>
+      <div class="step rv">
+        <span class="stepnum">STEP 03</span>
+        <h3 class="display" data-en="You see the options" data-ml="ഓപ്ഷനുകൾ കാണുന്നു">You see the options</h3>
+        <p data-en="A shortlist of lenders with rate, tenure, processing fee and honest approval chances — laid out plainly." data-ml="പലിശ, കാലാവധി, പ്രോസസ്സിംഗ് ഫീസ്, അംഗീകാര സാധ്യത എന്നിവ ഉൾപ്പെടെ ബാങ്കുകളുടെ പട്ടിക ലളിതമായി വിശദീകരിക്കുന്നു.">A shortlist of lenders with rate, tenure, processing fee and honest approval chances — laid out plainly.</p>
+      </div>
+      <div class="step rv">
+        <span class="stepnum">STEP 04</span>
+        <h3 class="display" data-en="We handle the paperwork" data-ml="രേഖകൾ ഞങ്ങൾ കൈകാര്യം ചെയ്യുന്നു">We handle the paperwork</h3>
+        <p data-en="Forms, file submission, follow-up with the branch, right through to disbursal." data-ml="ഫോമുകൾ, ഫയൽ സമർപ്പണം, ബ്രാഞ്ചുമായുള്ള ഫോളോ-അപ്പ്, തുക ലഭിക്കുന്നത് വരെ.">Forms, file submission, follow-up with the branch, right through to disbursal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOAN TYPES ============ -->
+<section id="loans" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-en="What we help with" data-ml="ഞങ്ങൾ സഹായിക്കുന്ന വായ്പകൾ">What we help with</span>
+      <h2 class="display" data-en="Every kind of loan a bank in Kerala offers" data-ml="കേരളത്തിലെ ബാങ്കുകൾ നൽകുന്ന എല്ലാ വായ്പകളും">Every kind of loan a bank in Kerala offers</h2>
+      <p data-en="Tap any one to ask about it directly on WhatsApp." data-ml="ഏതെങ്കിലും ഒന്നിൽ ടാപ്പ് ചെയ്ത് നേരിട്ട് വാട്ട്‌സ്ആപ്പിൽ ചോദിക്കൂ.">Tap any one to ask about it directly on WhatsApp.</p>
+    </div>
+
+    <div class="loangrid">
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I need help with a home loan.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+        <h3 data-en="Home loan" data-ml="ഭവന വായ്പ">Home loan</h3>
+        <p data-en="Purchase, construction, plot + build, or balance transfer to a lower rate." data-ml="വാങ്ങൽ, നിർമ്മാണം, സ്ഥലം + വീട്, അല്ലെങ്കിൽ കുറഞ്ഞ പലിശയിലേക്ക് ബാലൻസ് ട്രാൻസ്ഫർ.">Purchase, construction, plot + build, or balance transfer to a lower rate.</p>
+      </a>
+
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I need help with a personal loan.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+        <h3 data-en="Personal loan" data-ml="വ്യക്തിഗത വായ്പ">Personal loan</h3>
+        <p data-en="Marriage, medical, education or emergencies — without collateral." data-ml="വിവാഹം, ചികിത്സ, വിദ്യാഭ്യാസം, അടിയന്തര ആവശ്യങ്ങൾ — ഈട് ആവശ്യമില്ല.">Marriage, medical, education or emergencies — without collateral.</p>
+      </a>
+
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I need help with a business loan.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+        <h3 data-en="Business loan" data-ml="ബിസിനസ് വായ്പ">Business loan</h3>
+        <p data-en="Working capital, OD/CC limits, machinery and MSME schemes." data-ml="പ്രവർത്തന മൂലധനം, OD/CC പരിധി, യന്ത്രങ്ങൾ, MSME പദ്ധതികൾ.">Working capital, OD/CC limits, machinery and MSME schemes.</p>
+      </a>
+
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I need help with a vehicle loan.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 17h14M4 17V9l2-4h12l2 4v8"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg></div>
+        <h3 data-en="Vehicle loan" data-ml="വാഹന വായ്പ">Vehicle loan</h3>
+        <p data-en="New and used cars, two-wheelers, and commercial vehicles." data-ml="പുതിയതും ഉപയോഗിച്ചതുമായ കാറുകൾ, ഇരുചക്ര വാഹനങ്ങൾ, വാണിജ്യ വാഹനങ്ങൾ.">New and used cars, two-wheelers, and commercial vehicles.</p>
+      </a>
+
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I need help with a loan against property.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M10 21v-5h4v5"/></svg></div>
+        <h3 data-en="Loan against property" data-ml="വസ്തു ഈടു വായ്പ">Loan against property</h3>
+        <p data-en="Unlock value from land, house or commercial space at lower interest." data-ml="സ്ഥലം, വീട്, കട എന്നിവ ഈടു നൽകി കുറഞ്ഞ പലിശയ്ക്ക് വായ്പ.">Unlock value from land, house or commercial space at lower interest.</p>
+      </a>
+
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I need help with a gold loan.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 8v8l8 5 8-5V8z"/><path d="M12 3v18M4 8l8 5 8-5"/></svg></div>
+        <h3 data-en="Gold loan" data-ml="സ്വർണ്ണ വായ്പ">Gold loan</h3>
+        <p data-en="Best per-gram rate and safest custody — compared across lenders." data-ml="ഏറ്റവും മികച്ച ഗ്രാം നിരക്കും സുരക്ഷിതമായ സൂക്ഷിപ്പും — ബാങ്കുകൾ താരതമ്യം ചെയ്ത്.">Best per-gram rate and safest custody — compared across lenders.</p>
+      </a>
+
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I need help with an education loan.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
+        <h3 data-en="Education loan" data-ml="വിദ്യാഭ്യാസ വായ്പ">Education loan</h3>
+        <p data-en="India and abroad, including collateral-free options up to eligible limits." data-ml="ഇന്ത്യയിലും വിദേശത്തും, യോഗ്യമായ പരിധി വരെ ഈടില്ലാത്ത ഓപ്ഷനുകൾ ഉൾപ്പെടെ.">India and abroad, including collateral-free options up to eligible limits.</p>
+      </a>
+
+      <a class="loan rv" href="#" data-wa="Hi Loan Master, I want to transfer my existing loan to a lower rate.">
+        <div class="loanicon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+        <h3 data-en="Balance transfer" data-ml="ബാലൻസ് ട്രാൻസ്ഫർ">Balance transfer</h3>
+        <p data-en="Paying too much interest already? Move the loan and cut the EMI." data-ml="ഇപ്പോൾ കൂടുതൽ പലിശ അടയ്ക്കുന്നുണ്ടോ? ലോൺ മാറ്റി EMI കുറയ്ക്കാം.">Paying too much interest already? Move the loan and cut the EMI.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section id="why" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-en="Why Loan Master" data-ml="എന്തുകൊണ്ട് ലോൺ മാസ്റ്റർ">Why Loan Master</span>
+      <h2 class="display" data-en="We're not the bank. That's exactly the point." data-ml="ഞങ്ങൾ ബാങ്ക് അല്ല. അതാണ് ഇതിന്റെ ഗുണം.">We're not the bank. That's exactly the point.</h2>
+      <p data-en="A bank employee can only sell you their own product. We sit on your side of the table and look at all of them." data-ml="ഒരു ബാങ്ക് ജീവനക്കാരന് അവരുടെ സ്വന്തം ഉൽപ്പന്നം മാത്രമേ നൽകാൻ കഴിയൂ. ഞങ്ങൾ നിങ്ങളുടെ ഭാഗത്ത് നിന്ന് എല്ലാ ബാങ്കുകളെയും പരിശോധിക്കുന്നു.">A bank employee can only sell you their own product. We sit on your side of the table and look at all of them.</p>
+    </div>
+
+    <div class="whygrid">
+      <div class="why rv">
+        <span class="n">01</span>
+        <h3 class="display" data-en="Applied once, in the right place" data-ml="ശരിയായ സ്ഥലത്ത്, ഒരു തവണ മാത്രം">Applied once, in the right place</h3>
+        <p data-en="Every rejected application leaves a mark on your CIBIL score. We check eligibility before applying, so you don't damage your profile shopping around." data-ml="ഓരോ നിരസിക്കപ്പെട്ട അപേക്ഷയും നിങ്ങളുടെ CIBIL സ്കോറിനെ ബാധിക്കും. അപേക്ഷിക്കും മുൻപ് യോഗ്യത പരിശോധിക്കുന്നതിനാൽ നിങ്ങളുടെ പ്രൊഫൈൽ കേടാകില്ല.">Every rejected application leaves a mark on your CIBIL score. We check eligibility before applying, so you don't damage your profile shopping around.</p>
+      </div>
+      <div class="why rv">
+        <span class="n">02</span>
+        <h3 class="display" data-en="The full cost, not just the rate" data-ml="പലിശ മാത്രമല്ല, മൊത്തം ചെലവ്">The full cost, not just the rate</h3>
+        <p data-en="Processing fees, insurance bundled into the EMI, prepayment penalties, legal charges. We show the number that actually leaves your pocket." data-ml="പ്രോസസ്സിംഗ് ഫീസ്, EMI-യിൽ ചേർത്ത ഇൻഷുറൻസ്, മുൻകൂർ അടവ് പിഴ, നിയമ ചെലവുകൾ. നിങ്ങളുടെ കയ്യിൽ നിന്ന് പോകുന്ന യഥാർത്ഥ തുക ഞങ്ങൾ കാണിക്കും.">Processing fees, insurance bundled into the EMI, prepayment penalties, legal charges. We show the number that actually leaves your pocket.</p>
+      </div>
+      <div class="why rv">
+        <span class="n">03</span>
+        <h3 class="display" data-en="Someone who picks up the phone" data-ml="ഫോൺ എടുക്കുന്ന ഒരാൾ">Someone who picks up the phone</h3>
+        <p data-en="Files get stuck. Branches ask for one more document. You get a person in Thrissur who follows it up, in Malayalam, until it's disbursed." data-ml="ഫയലുകൾ പലപ്പോഴും കുടുങ്ങും. ബ്രാഞ്ച് ഒരു രേഖ കൂടി ചോദിക്കും. തുക ലഭിക്കുന്നത് വരെ മലയാളത്തിൽ ഫോളോ-അപ്പ് ചെയ്യാൻ തൃശൂരിൽ ഒരാൾ ഉണ്ടാകും.">Files get stuck. Branches ask for one more document. You get a person in Thrissur who follows it up, in Malayalam, until it's disbursed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ELIGIBILITY CHECK ============ -->
+<section id="check">
+  <div class="wrap checkwrap">
+    <div class="rv">
+      <span class="eyebrow" data-en="Free eligibility check" data-ml="സൗജന്യ യോഗ്യതാ പരിശോധന">Free eligibility check</span>
+      <h2 class="display" style="font-size:clamp(1.85rem,3.4vw,2.6rem);margin:14px 0 22px" data-en="Send us the basics. We'll come back with real options." data-ml="അടിസ്ഥാന വിവരങ്ങൾ അയക്കൂ. യഥാർത്ഥ ഓപ്ഷനുകളുമായി ഞങ്ങൾ മടങ്ങിവരാം.">Send us the basics. We'll come back with real options.</h2>
+
+      <ul class="checkpoints">
+        <li>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b data-en="The check itself is free" data-ml="പരിശോധന പൂർണ്ണമായും സൗജന്യം">The check itself is free</b><span data-en="You pay only if you decide to go ahead with an application." data-ml="അപേക്ഷ നൽകാൻ തീരുമാനിച്ചാൽ മാത്രം ഫീസ്.">You pay only if you decide to go ahead with an application.</span></div>
+        </li>
+        <li>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b data-en="No documents needed right now" data-ml="ഇപ്പോൾ രേഖകൾ ആവശ്യമില്ല">No documents needed right now</b><span data-en="Just a few details to start. Papers come later, only if you proceed." data-ml="തുടങ്ങാൻ കുറച്ച് വിവരങ്ങൾ മതി. മുന്നോട്ട് പോകുകയാണെങ്കിൽ മാത്രം രേഖകൾ.">Just a few details to start. Papers come later, only if you proceed.</span></div>
+        </li>
+        <li>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b data-en="Your details stay with us" data-ml="വിവരങ്ങൾ ഞങ്ങളോടൊപ്പം സുരക്ഷിതം">Your details stay with us</b><span data-en="We don't sell your data or pass your number to call centres." data-ml="നിങ്ങളുടെ വിവരങ്ങൾ ഞങ്ങൾ വിൽക്കുകയോ കോൾ സെന്ററുകൾക്ക് നൽകുകയോ ഇല്ല.">We don't sell your data or pass your number to call centres.</span></div>
+        </li>
+        <li>
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><b data-en="Reply usually within the day" data-ml="സാധാരണ അന്ന് തന്നെ മറുപടി">Reply usually within the day</b><span data-en="Working hours: Monday to Saturday, 9:30 am – 7:00 pm." data-ml="പ്രവൃത്തി സമയം: തിങ്കൾ മുതൽ ശനി വരെ, രാവിലെ 9:30 – വൈകിട്ട് 7:00.">Working hours: Monday to Saturday, 9:30 am – 7:00 pm.</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="formcard rv">
+      <div class="field">
+        <label for="f-name" data-en="Your name" data-ml="നിങ്ങളുടെ പേര്">Your name</label>
+        <input id="f-name" type="text" placeholder="—">
+      </div>
+      <div class="two">
+        <div class="field">
+          <label for="f-type" data-en="Loan type" data-ml="ലോൺ തരം">Loan type</label>
+          <select id="f-type">
+            <option data-en="Home loan" data-ml="ഭവന വായ്പ">Home loan</option>
+            <option data-en="Personal loan" data-ml="വ്യക്തിഗത വായ്പ">Personal loan</option>
+            <option data-en="Business loan" data-ml="ബിസിനസ് വായ്പ">Business loan</option>
+            <option data-en="Vehicle loan" data-ml="വാഹന വായ്പ">Vehicle loan</option>
+            <option data-en="Loan against property" data-ml="വസ്തു ഈടു വായ്പ">Loan against property</option>
+            <option data-en="Gold loan" data-ml="സ്വർണ്ണ വായ്പ">Gold loan</option>
+            <option data-en="Education loan" data-ml="വിദ്യാഭ്യാസ വായ്പ">Education loan</option>
+            <option data-en="Balance transfer" data-ml="ബാലൻസ് ട്രാൻസ്ഫർ">Balance transfer</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-amt" data-en="Amount needed (₹)" data-ml="ആവശ്യമുള്ള തുക (₹)">Amount needed (₹)</label>
+          <input id="f-amt" type="text" inputmode="numeric" placeholder="10,00,000">
+        </div>
+      </div>
+      <div class="two">
+        <div class="field">
+          <label for="f-emp" data-en="You are" data-ml="നിങ്ങൾ">You are</label>
+          <select id="f-emp">
+            <option data-en="Salaried" data-ml="ശമ്പളക്കാരൻ">Salaried</option>
+            <option data-en="Self-employed / business" data-ml="സ്വയം തൊഴിൽ / ബിസിനസ്">Self-employed / business</option>
+            <option data-en="NRI" data-ml="പ്രവാസി (NRI)">NRI</option>
+            <option data-en="Pensioner" data-ml="പെൻഷൻകാരൻ">Pensioner</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-city" data-en="Town / district" data-ml="സ്ഥലം / ജില്ല">Town / district</label>
+          <input id="f-city" type="text" placeholder="Thrissur">
+        </div>
+      </div>
+
+      <button class="btn btn-wa" id="sendwa" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.7 1-.9 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3 3 0 0 0-1 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.5 1.5.6a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        <span data-en="Send on WhatsApp" data-ml="വാട്ട്‌സ്ആപ്പിൽ അയക്കൂ">Send on WhatsApp</span>
+      </button>
+      <p class="formnote" data-en="Opens WhatsApp with your details filled in. Nothing is sent until you press send." data-ml="നിങ്ങളുടെ വിവരങ്ങൾ സഹിതം വാട്ട്‌സ്ആപ്പ് തുറക്കും. നിങ്ങൾ അയക്കുന്നത് വരെ ഒന്നും പോകില്ല.">Opens WhatsApp with your details filled in. Nothing is sent until you press send.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEE ============ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="feestrip rv">
+      <div>
+        <h2 class="display" data-en="One small service fee. Told to you before we start." data-ml="ഒരു ചെറിയ സേവന ഫീസ്. തുടങ്ങും മുൻപേ പറയും.">One small service fee. Told to you before we start.</h2>
+        <p data-en="No hidden cuts, no surprise deductions from your disbursed amount. You'll know the exact figure in writing before a single form is filled — and the eligibility check before that is always free." data-ml="മറഞ്ഞിരിക്കുന്ന കമ്മീഷനില്ല, ലഭിക്കുന്ന തുകയിൽ നിന്ന് അപ്രതീക്ഷിത കിഴിവുകളില്ല. ഒരു ഫോം പൂരിപ്പിക്കും മുൻപ് കൃത്യമായ തുക എഴുതി അറിയിക്കും — അതിന് മുൻപുള്ള യോഗ്യതാ പരിശോധന എപ്പോഴും സൗജന്യമാണ്.">No hidden cuts, no surprise deductions from your disbursed amount. You'll know the exact figure in writing before a single form is filled — and the eligibility check before that is always free.</p>
+      </div>
+      <a href="#" class="btn btn-wa" data-wa="Hi Loan Master, could you tell me your service charges?">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.7 1-.9 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3 3 0 0 0-1 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.5 1.5.6a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+        <span data-en="Ask our charges" data-ml="ഫീസ് അറിയാൻ">Ask our charges</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sec-head rv" style="text-align:center;margin:0 auto 44px">
+      <span class="eyebrow" data-en="Common questions" data-ml="സാധാരണ ചോദ്യങ്ങൾ">Common questions</span>
+      <h2 class="display" data-en="Things people ask before calling" data-ml="വിളിക്കും മുൻപ് ആളുകൾ ചോദിക്കുന്നത്">Things people ask before calling</h2>
+    </div>
+
+    <div class="faq rv">
+      <details>
+        <summary><span data-en="Do you give the loan yourselves?" data-ml="നിങ്ങൾ തന്നെയാണോ ലോൺ നൽകുന്നത്?">Do you give the loan yourselves?</span></summary>
+        <p data-en="No. Loan Master is a loan advisory and registered DSA. The loan is always sanctioned and disbursed by the bank or NBFC. We help you find the right one, prepare the file correctly and follow it through." data-ml="അല്ല. ലോൺ മാസ്റ്റർ ഒരു ലോൺ അഡ്വൈസറിയും രജിസ്റ്റേഡ് DSA-യുമാണ്. ലോൺ എപ്പോഴും ബാങ്കോ NBFC-യോ ആണ് അനുവദിക്കുന്നത്. ശരിയായ ബാങ്ക് കണ്ടെത്താനും ഫയൽ കൃത്യമായി തയ്യാറാക്കാനും ഞങ്ങൾ സഹായിക്കുന്നു.">No. Loan Master is a loan advisory and registered DSA. The loan is always sanctioned and disbursed by the bank or NBFC. We help you find the right one, prepare the file correctly and follow it through.</p>
+      </details>
+      <details>
+        <summary><span data-en="Can you guarantee my loan will be approved?" data-ml="ലോൺ ലഭിക്കുമെന്ന് ഉറപ്പ് നൽകാമോ?">Can you guarantee my loan will be approved?</span></summary>
+        <p data-en="No, and you should be careful of anyone who promises that. Approval is the bank's decision. What we can do is check your eligibility honestly beforehand and point you where your chances are strongest — which is why our files rarely get rejected." data-ml="ഇല്ല. അങ്ങനെ ഉറപ്പ് നൽകുന്നവരെ സൂക്ഷിക്കുക. അംഗീകാരം ബാങ്കിന്റെ തീരുമാനമാണ്. നിങ്ങളുടെ യോഗ്യത മുൻകൂട്ടി സത്യസന്ധമായി പരിശോധിച്ച് ഏറ്റവും സാധ്യതയുള്ള ബാങ്കിലേക്ക് നയിക്കാൻ ഞങ്ങൾക്ക് കഴിയും.">No, and you should be careful of anyone who promises that. Approval is the bank's decision. What we can do is check your eligibility honestly beforehand and point you where your chances are strongest — which is why our files rarely get rejected.</p>
+      </details>
+      <details>
+        <summary><span data-en="My CIBIL score is low. Is it pointless?" data-ml="എന്റെ CIBIL സ്കോർ കുറവാണ്. ഒരു പ്രയോജനവുമില്ലേ?">My CIBIL score is low. Is it pointless?</span></summary>
+        <p data-en="Not necessarily. Some lenders weigh income and existing relationships more heavily, and in many cases a few months of small corrections lift the score enough to qualify. Talk to us first rather than applying and collecting rejections." data-ml="അങ്ങനെയല്ല. ചില ബാങ്കുകൾ വരുമാനത്തിനും നിലവിലുള്ള ബന്ധത്തിനും കൂടുതൽ പ്രാധാന്യം നൽകുന്നു. പല കേസുകളിലും കുറച്ച് മാസത്തെ ചെറിയ തിരുത്തലുകൾ സ്കോർ ഉയർത്തും. അപേക്ഷിച്ച് നിരസിക്കപ്പെടുന്നതിന് പകരം ആദ്യം ഞങ്ങളോട് സംസാരിക്കൂ.">Not necessarily. Some lenders weigh income and existing relationships more heavily, and in many cases a few months of small corrections lift the score enough to qualify. Talk to us first rather than applying and collecting rejections.</p>
+      </details>
+      <details>
+        <summary><span data-en="What do you charge?" data-ml="നിങ്ങളുടെ ഫീസ് എത്രയാണ്?">What do you charge?</span></summary>
+        <p data-en="A minimal service fee that depends on the loan type and the work involved. The eligibility check and the comparison are free — the fee only applies if you choose to go ahead, and we tell you the exact amount before anything is filed." data-ml="ലോൺ തരവും ജോലിയുടെ അളവും അനുസരിച്ചുള്ള ഒരു ചെറിയ സേവന ഫീസ്. യോഗ്യതാ പരിശോധനയും താരതമ്യവും സൗജന്യമാണ് — മുന്നോട്ട് പോകാൻ തീരുമാനിച്ചാൽ മാത്രം ഫീസ്, അതും കൃത്യമായ തുക മുൻകൂട്ടി അറിയിച്ചിട്ട്.">A minimal service fee that depends on the loan type and the work involved. The eligibility check and the comparison are free — the fee only applies if you choose to go ahead, and we tell you the exact amount before anything is filed.</p>
+      </details>
+      <details>
+        <summary><span data-en="I live outside Thrissur. Can you still help?" data-ml="ഞാൻ തൃശൂരിന് പുറത്താണ്. സഹായിക്കാൻ കഴിയുമോ?">I live outside Thrissur. Can you still help?</span></summary>
+        <p data-en="Yes. Most of the process runs over WhatsApp and phone, and we work with customers across Kerala. NRIs are welcome too — we handle the coordination here while you're abroad." data-ml="ഉവ്വ്. ഭൂരിഭാഗം കാര്യങ്ങളും വാട്ട്‌സ്ആപ്പിലൂടെയും ഫോണിലൂടെയും നടക്കും. കേരളത്തിലുടനീളമുള്ള ഉപഭോക്താക്കളുമായി ഞങ്ങൾ പ്രവർത്തിക്കുന്നു. പ്രവാസികൾക്കും സ്വാഗതം — നിങ്ങൾ വിദേശത്തായിരിക്കുമ്പോൾ ഇവിടത്തെ കാര്യങ്ങൾ ഞങ്ങൾ നോക്കും.">Yes. Most of the process runs over WhatsApp and phone, and we work with customers across Kerala. NRIs are welcome too — we handle the coordination here while you're abroad.</p>
+      </details>
+      <details>
+        <summary><span data-en="Is my personal information safe?" data-ml="എന്റെ വിവരങ്ങൾ സുരക്ഷിതമാണോ?">Is my personal information safe?</span></summary>
+        <p data-en="Your documents are used only for the applications you approve, and shared only with the lender you select. We don't sell contact details or pass your number on to anyone else." data-ml="നിങ്ങൾ അംഗീകരിക്കുന്ന അപേക്ഷകൾക്ക് മാത്രമാണ് രേഖകൾ ഉപയോഗിക്കുന്നത്, നിങ്ങൾ തിരഞ്ഞെടുക്കുന്ന ബാങ്കുമായി മാത്രം പങ്കിടുന്നു. ഞങ്ങൾ നിങ്ങളുടെ വിവരങ്ങൾ മറ്റാർക്കും നൽകുകയോ വിൽക്കുകയോ ഇല്ല.">Your documents are used only for the applications you approve, and shared only with the lender you select. We don't sell contact details or pass your number on to anyone else.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-en="Talk to us" data-ml="ഞങ്ങളുമായി സംസാരിക്കൂ">Talk to us</span>
+      <h2 class="display" data-en="Thrissur office — walk in or just message" data-ml="തൃശൂർ ഓഫീസ് — നേരിട്ട് വരൂ അല്ലെങ്കിൽ സന്ദേശം അയക്കൂ">Thrissur office — walk in or just message</h2>
+    </div>
+
+    <div class="contactgrid rv">
+      <div style="display:grid;gap:22px">
+        <div class="ccard">
+          <span class="eyebrow" data-en="Phone" data-ml="ഫോൺ">Phone</span>
+          <a href="tel:+917356043958">+91 73560 43958</a>
+          <p data-en="Monday – Saturday, 9:30 am to 7:00 pm" data-ml="തിങ്കൾ – ശനി, രാവിലെ 9:30 മുതൽ വൈകിട്ട് 7:00 വരെ">Monday – Saturday, 9:30 am to 7:00 pm</p>
+        </div>
+        <div class="ccard">
+          <span class="eyebrow" data-en="Office" data-ml="ഓഫീസ്">Office</span>
+          <p style="font-size:1rem;color:var(--ink);line-height:1.7">
+            Loan Master — Loan Advisory<br>
+            2nd Floor, Kalliyath Royal Square<br>
+            Palace Road, Chembukkav<br>
+            Thrissur, Kerala 680020
+          </p>
+          <a href="https://maps.app.goo.gl/" target="_blank" rel="noopener" style="font-size:.92rem;margin-top:14px" data-en="Get directions →" data-ml="വഴി കാണിക്കൂ →">Get directions →</a>
+        </div>
+      </div>
+
+      <div class="mapbox">
+        <iframe
+          title="Loan Master office location, Chembukkav, Thrissur"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29828.465460143587!2d76.17962032556537!3d10.528404063448779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ef417b2e935d%3A0x1c2683c6d961218c!2sLOAN%20MASTER!5e1!3m2!1sen!2sin!4v1785663394191!5m2!1sen!2sin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div class="footbrand">
+        <b>Loan Master</b>
+        <p data-en="An independent loan advisory in Thrissur, Kerala. We compare lenders on your behalf so you borrow on better terms." data-ml="തൃശൂരിലെ ഒരു സ്വതന്ത്ര ലോൺ അഡ്വൈസറി. മികച്ച നിബന്ധനകളിൽ വായ്പ ലഭിക്കാൻ നിങ്ങൾക്കായി ബാങ്കുകളെ താരതമ്യം ചെയ്യുന്നു.">An independent loan advisory in Thrissur, Kerala. We compare lenders on your behalf so you borrow on better terms.</p>
+      </div>
+      <div>
+        <h4 data-en="Loans" data-ml="വായ്പകൾ">Loans</h4>
+        <a href="#loans" data-en="Home loan" data-ml="ഭവന വായ്പ">Home loan</a>
+        <a href="#loans" data-en="Personal loan" data-ml="വ്യക്തിഗത വായ്പ">Personal loan</a>
+        <a href="#loans" data-en="Business loan" data-ml="ബിസിനസ് വായ്പ">Business loan</a>
+        <a href="#loans" data-en="Loan against property" data-ml="വസ്തു ഈടു വായ്പ">Loan against property</a>
+      </div>
+      <div>
+        <h4 data-en="Company" data-ml="കമ്പനി">Company</h4>
+        <a href="#how" data-en="How it works" data-ml="എങ്ങനെ പ്രവർത്തിക്കുന്നു">How it works</a>
+        <a href="#why" data-en="Why us" data-ml="എന്തുകൊണ്ട് ഞങ്ങൾ">Why us</a>
+        <a href="#faq" data-en="FAQ" data-ml="ചോദ്യങ്ങൾ">FAQ</a>
+        <a href="#contact" data-en="Contact" data-ml="ബന്ധപ്പെടുക">Contact</a>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <p data-en="Loan Master is a loan consultancy and registered Direct Selling Agent. We are not a bank, NBFC or lender, and we do not lend money or accept deposits. All loans are sanctioned solely at the discretion of the partner bank or NBFC, subject to their eligibility criteria and documentation. Interest rates and figures shown on this site are illustrative and do not constitute an offer. Service charges are disclosed to the customer in advance." data-ml="ലോൺ മാസ്റ്റർ ഒരു ലോൺ കൺസൾട്ടൻസിയും രജിസ്റ്റേഡ് ഡയറക്ട് സെല്ലിംഗ് ഏജന്റുമാണ്. ഞങ്ങൾ ബാങ്കോ NBFC-യോ വായ്പാ ദാതാവോ അല്ല; പണം വായ്പ നൽകുകയോ നിക്ഷേപം സ്വീകരിക്കുകയോ ചെയ്യുന്നില്ല. എല്ലാ വായ്പകളും പങ്കാളി ബാങ്കിന്റെയോ NBFC-യുടെയോ യോഗ്യതാ മാനദണ്ഡങ്ങൾക്കും രേഖകൾക്കും വിധേയമായി അവരുടെ വിവേചനാധികാരത്തിലാണ് അനുവദിക്കുന്നത്. ഈ സൈറ്റിലെ പലിശ നിരക്കുകളും കണക്കുകളും ഉദാഹരണങ്ങൾ മാത്രമാണ്, ഒരു ഓഫർ അല്ല. സേവന ഫീസ് ഉപഭോക്താവിനെ മുൻകൂട്ടി അറിയിക്കുന്നതാണ്.">Loan Master is a loan consultancy and registered Direct Selling Agent. We are not a bank, NBFC or lender, and we do not lend money or accept deposits. All loans are sanctioned solely at the discretion of the partner bank or NBFC, subject to their eligibility criteria and documentation. Interest rates and figures shown on this site are illustrative and do not constitute an offer. Service charges are disclosed to the customer in advance.</p>
+      <p style="margin-top:14px">© <span id="yr"></span> Loan Master, Thrissur.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="floatwa" id="floatwa" href="#" aria-label="Chat on WhatsApp">
+  <svg width="27" height="27" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.7 1-.9 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3 3 0 0 0-1 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.5 1.5.6a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<script>
+/* ====== EDIT THIS ONE LINE: WhatsApp number, country code, no + or spaces ====== */
+const WA_NUMBER = "917356043958";
+/* ============================================================================== */
+
+const waLink = (msg) => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+
+document.getElementById('floatwa').href = waLink("Hi Loan Master, I'd like to know about a loan.");
+document.querySelectorAll('[data-wa]').forEach(el=>{ el.href = waLink(el.dataset.wa); el.target="_blank"; el.rel="noopener"; });
+
+/* ---- language ---- */
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang', lang);
+  document.documentElement.setAttribute('lang', lang === 'ml' ? 'ml' : 'en');
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const t = el.dataset[lang] || el.dataset.en;
+    if(t !== undefined) el.innerHTML = t;
+  });
+  document.querySelectorAll('[data-setlang]').forEach(b=>
+    b.setAttribute('aria-pressed', b.dataset.setlang === lang));
+  try{ localStorage.setItem('lm-lang', lang); }catch(e){}
+}
+document.querySelectorAll('[data-setlang]').forEach(b=>
+  b.addEventListener('click', ()=> setLang(b.dataset.setlang)));
+let saved='en'; try{ saved = localStorage.getItem('lm-lang') || 'en'; }catch(e){}
+setLang(saved);
+
+/* ---- lead form -> whatsapp ---- */
+document.getElementById('sendwa').addEventListener('click', ()=>{
+  const v = id => document.getElementById(id);
+  const sel = id => v(id).options[v(id).selectedIndex].textContent.trim();
+  const name = v('f-name').value.trim() || '—';
+  const msg =
+    "*Loan Master — loan enquiry*\n" +
+    "Name: " + name + "\n" +
+    "Loan type: " + sel('f-type') + "\n" +
+    "Amount: ₹" + (v('f-amt').value.trim() || '—') + "\n" +
+    "Employment: " + sel('f-emp') + "\n" +
+    "Place: " + (v('f-city').value.trim() || '—');
+  window.open(waLink(msg), '_blank', 'noopener');
+});
+
+/* ---- mobile menu ---- */
+const nav = document.getElementById('nav'), mb = document.getElementById('menubtn');
+mb.addEventListener('click', ()=>{
+  const open = nav.classList.toggle('open');
+  mb.setAttribute('aria-expanded', open);
+});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+/* ---- reveal on scroll ---- */
+const io = new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('seen'); io.unobserve(e.target); } });
+},{threshold:.14, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv, .step').forEach((el,i)=>{
+  el.style.transitionDelay = (i % 4) * 70 + 'ms';
+  io.observe(el);
+});
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
