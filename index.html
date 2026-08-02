@@ -3,7 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://loan-master.in/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://loan-master.in/">
+<meta property="og:site_name" content="Loan Master">
+<meta property="og:title" content="Loan Master — The Complete Loan Solutions | Thrissur">
+<meta property="og:description" content="Free eligibility check and bank comparison for all loan types. No fee unless your loan is approved. Registered DSA, Thrissur, Kerala.">
+<meta property="og:image" content="https://loan-master.in/logo.png">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0F8C8E">
 <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+<!-- ============================================================
+     GOOGLE ANALYTICS
+     Measurement ID: G-XKH4J7713Z
+     Property: Loan Master Website (analytics.google.com)
+     ============================================================ -->
+<script>const GA_ID = "G-XKH4J7713Z";</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XKH4J7713Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  if (GA_ID.indexOf('XXXX') === -1) gtag('config', GA_ID);
+</script>
 <link rel="alternate icon" type="image/png" href="logo.png">
 <title>Loan Master — The Complete Loan Solutions | Thrissur, Kerala</title>
 <meta name="description" content="Loan Master, Thrissur — the complete loan solutions. Registered DSA. Free eligibility check and bank comparison for home, personal, business, vehicle, gold, education loans and LAP. No fee unless your loan is approved.">
@@ -18,7 +42,8 @@
   "description":"The complete loan solutions. Registered DSA in Thrissur, Kerala. Eligibility check, bank comparison and application support for all loan types.",
   "telephone":["+918594010800","+918592010800","+917356043958"],
   "slogan":"The Complete Loan Solutions",
-  "logo":"logo.svg",
+  "logo":"https://loan-master.in/logo.svg",
+  "url":"https://loan-master.in",
   "areaServed":"Kerala, India",
   "availableLanguage":["en","ml"],
   "address":{
@@ -129,12 +154,46 @@ header{
 .menubtn svg{display:block}
 
 /* ---------- HERO ---------- */
-.hero{padding:76px 0 88px;position:relative;overflow:hidden}
+.hero{padding:76px 0 88px;position:relative;overflow:hidden;isolation:isolate}
+/* soft brand-colour wash that slowly drifts */
 .hero:before{
-  content:"";position:absolute;inset:0;
-  background:radial-gradient(900px 500px at 88% 8%,rgba(184,134,47,.13),transparent 60%),
-             radial-gradient(700px 500px at 5% 95%,rgba(18,65,74,.08),transparent 60%);
-  pointer-events:none
+  content:"";position:absolute;inset:-20%;z-index:-2;pointer-events:none;
+  background:radial-gradient(680px 460px at 78% 12%,rgba(76,185,68,.16),transparent 62%),
+             radial-gradient(760px 520px at 12% 88%,rgba(15,140,142,.15),transparent 62%),
+             radial-gradient(520px 420px at 50% 50%,rgba(20,159,161,.07),transparent 65%);
+  animation:drift 22s ease-in-out infinite alternate
+}
+@keyframes drift{
+  0%{transform:translate3d(0,0,0) scale(1)}
+  100%{transform:translate3d(-3%,2%,0) scale(1.08)}
+}
+/* ascending bars echoing the logo, drawn in CSS - no image weight */
+.herobars{
+  position:absolute;left:0;right:0;bottom:0;height:210px;z-index:-1;pointer-events:none;
+  display:flex;align-items:flex-end;gap:2.4vw;padding:0 4vw;opacity:.09
+}
+.herobars i{
+  flex:1;background:linear-gradient(180deg,var(--teal),var(--teal-deep));
+  border-radius:6px 6px 0 0;transform-origin:bottom;
+  transform:scaleY(0);animation:grow 1.5s cubic-bezier(.2,.8,.25,1) forwards
+}
+.herobars i:nth-child(1){height:22%;animation-delay:.20s}
+.herobars i:nth-child(2){height:36%;animation-delay:.32s}
+.herobars i:nth-child(3){height:30%;animation-delay:.44s}
+.herobars i:nth-child(4){height:54%;animation-delay:.56s}
+.herobars i:nth-child(5){height:46%;animation-delay:.68s}
+.herobars i:nth-child(6){height:72%;animation-delay:.80s}
+.herobars i:nth-child(7){height:64%;animation-delay:.92s}
+.herobars i:nth-child(8){height:92%;animation-delay:1.04s;background:linear-gradient(180deg,var(--green),var(--green-deep))}
+@keyframes grow{to{transform:scaleY(1)}}
+/* faint graph grid, keeps it feeling like a financial tool */
+.hero:after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(10,46,47,.05) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(10,46,47,.05) 1px,transparent 1px);
+  background-size:52px 52px;
+  mask-image:radial-gradient(closest-side at 50% 45%,#000 30%,transparent 100%);
+  -webkit-mask-image:radial-gradient(closest-side at 50% 45%,#000 30%,transparent 100%)
 }
 .herogrid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative}
 .hero h1{font-size:clamp(2.4rem,5vw,3.9rem);margin:18px 0 20px}
@@ -202,7 +261,19 @@ section{padding:88px 0}
 .sec-head{max-width:62ch;margin-bottom:48px}
 .sec-head h2{font-size:clamp(1.85rem,3.4vw,2.7rem);margin:14px 0 14px}
 .sec-head p{color:var(--muted);font-size:1.03rem}
-.dark{background:var(--ink);color:var(--paper)}
+.dark{background:var(--ink);color:var(--paper);position:relative;overflow:hidden;isolation:isolate}
+.dark:before{
+  content:"";position:absolute;inset:-30%;z-index:-1;pointer-events:none;
+  background:radial-gradient(600px 400px at 20% 20%,rgba(76,185,68,.16),transparent 60%),
+             radial-gradient(700px 460px at 85% 80%,rgba(20,159,161,.20),transparent 60%);
+  animation:drift 26s ease-in-out infinite alternate-reverse
+}
+.dark:after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:60px 60px
+}
 .dark .sec-head p{color:rgba(237,238,231,.72)}
 .dark h2,.dark h3{color:var(--paper)}
 
@@ -253,8 +324,8 @@ section{padding:88px 0}
 .field{margin-bottom:17px}
 .field label{display:block;font-size:.8rem;font-weight:600;margin-bottom:7px;color:var(--petrol)}
 .field input,.field select{
-  width:100%;padding:13px 14px;font-size:16px;border:1px solid var(--line);border-radius:10px;
-  font-family:inherit;font-size:.95rem;background:var(--paper-2);color:var(--ink)
+  width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;
+  font-family:inherit;font-size:16px;background:var(--paper-2);color:var(--ink)
 }
 html[data-lang="ml"] .field input,html[data-lang="ml"] .field select{font-family:'Noto Sans Malayalam',sans-serif}
 .field input:focus,.field select:focus{outline:2px solid var(--brass);outline-offset:1px;background:#fff}
@@ -269,9 +340,15 @@ html[data-lang="ml"] .field input,html[data-lang="ml"] .field select{font-family
 
 /* ---------- FEE STRIP ---------- */
 .feestrip{
-  background:linear-gradient(105deg,var(--petrol),var(--petrol-soft));color:#fff;
+  background:linear-gradient(105deg,var(--teal-deep),var(--teal-soft));color:#fff;
+  position:relative;overflow:hidden;isolation:isolate;
   border-radius:20px;padding:44px 44px;display:grid;grid-template-columns:1.2fr auto;
   gap:32px;align-items:center
+}
+.feestrip:before{
+  content:"";position:absolute;right:-6%;top:-40%;width:52%;height:190%;z-index:-1;
+  background:radial-gradient(closest-side,rgba(76,185,68,.42),transparent 70%);
+  animation:drift 18s ease-in-out infinite alternate
 }
 .feestrip h2{font-size:clamp(1.5rem,2.6vw,2.05rem);margin-bottom:12px;color:#fff}
 .feestrip p{color:rgba(255,255,255,.8);max-width:56ch;font-size:.98rem}
@@ -357,8 +434,13 @@ footer a:hover{color:var(--brass-lite)}
   .formcard{padding:24px 20px}
   .trustrow{gap:14px}
 }
+@media(max-width:640px){
+  .herobars{height:150px;opacity:.07;gap:3vw}
+  .hero:after{background-size:40px 40px}
+}
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
+  .herobars i{transform:scaleY(1)!important}
   .rv{opacity:1;transform:none}
   .offer{opacity:1;transform:none}
 }
@@ -439,6 +521,7 @@ footer a:hover{color:var(--brass-lite)}
 <!-- ============ HERO ============ -->
 <div id="top"></div>
 <section class="hero">
+  <div class="herobars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
   <div class="wrap herogrid">
     <div>
       <span class="eyebrow" data-en="Registered DSA · Thrissur, Kerala" data-ml="രജിസ്റ്റേഡ് DSA · തൃശൂർ, കേരളം">Registered DSA · Thrissur, Kerala</span>
@@ -894,6 +977,49 @@ document.querySelectorAll('.rv, .step').forEach((el,i)=>{
   el.style.transitionDelay = (i % 4) * 70 + 'ms';
   io.observe(el);
 });
+
+
+/* ---- traffic & conversion tracking ---- */
+function track(name, params){
+  try{ if(typeof gtag === 'function') gtag('event', name, params || {}); }catch(e){}
+}
+
+/* WhatsApp clicks - the main conversion */
+document.querySelectorAll('[data-wa]').forEach(el=>{
+  el.addEventListener('click', ()=> track('whatsapp_click', {
+    source: el.classList.contains('loan') ? 'loan_card' : 'button',
+    loan_type: (el.querySelector('h3') ? el.querySelector('h3').textContent.trim() : 'general')
+  }));
+});
+document.getElementById('floatwa').addEventListener('click', ()=>
+  track('whatsapp_click', {source:'floating_button'}));
+
+/* phone calls */
+document.querySelectorAll('a[href^="tel:"]').forEach(a=>{
+  a.addEventListener('click', ()=> track('phone_call', {number: a.getAttribute('href').replace('tel:','')}));
+});
+
+/* enquiry form submitted */
+document.getElementById('sendwa').addEventListener('click', ()=>{
+  const g = id => document.getElementById(id);
+  track('enquiry_submitted', {
+    loan_type: g('f-type').options[g('f-type').selectedIndex].textContent.trim(),
+    employment: g('f-emp').options[g('f-emp').selectedIndex].textContent.trim()
+  });
+});
+
+/* language preference - tells you if Malayalam is worth expanding */
+document.querySelectorAll('[data-setlang]').forEach(b=>
+  b.addEventListener('click', ()=> track('language_switch', {language: b.dataset.setlang})));
+
+/* how far people scroll before leaving */
+let depthHit = {};
+window.addEventListener('scroll', ()=>{
+  const pct = Math.round((window.scrollY + innerHeight) / document.body.scrollHeight * 100);
+  [25,50,75,100].forEach(m=>{
+    if(pct >= m && !depthHit[m]){ depthHit[m] = 1; track('scroll_depth', {percent: m}); }
+  });
+}, {passive:true});
 
 document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
