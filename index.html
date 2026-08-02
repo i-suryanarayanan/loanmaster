@@ -3,18 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loan Master — Loan Advisory, Thrissur | Compare banks before you borrow</title>
-<meta name="description" content="Loan Master is a registered DSA loan consultancy in Thrissur, Kerala. We check your profile and eligibility, compare offers across banks and NBFCs, and help you apply where you get the better deal.">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="alternate icon" type="image/png" href="logo.png">
+<title>Loan Master — The Complete Loan Solutions | Thrissur, Kerala</title>
+<meta name="description" content="Loan Master, Thrissur — the complete loan solutions. Registered DSA. Free eligibility check and bank comparison for home, personal, business, vehicle, gold, education loans and LAP. No fee unless your loan is approved.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"FinancialService",
   "name":"Loan Master",
-  "description":"Loan advisory and registered DSA in Thrissur, Kerala. Eligibility check, bank comparison and application support for all loan types.",
-  "telephone":"+917356043958",
+  "description":"The complete loan solutions. Registered DSA in Thrissur, Kerala. Eligibility check, bank comparison and application support for all loan types.",
+  "telephone":["+918594010800","+918592010800","+917356043958"],
+  "slogan":"The Complete Loan Solutions",
+  "logo":"logo.svg",
   "areaServed":"Kerala, India",
   "availableLanguage":["en","ml"],
   "address":{
@@ -35,26 +39,37 @@
 </script>
 <style>
 :root{
-  --ink:#0D262C;
-  --petrol:#12414A;
-  --petrol-soft:#1B5A65;
-  --brass:#B8862F;
-  --brass-lite:#E3B65C;
-  --paper:#EDEEE7;
-  --paper-2:#F7F7F2;
+  --ink:#0A2E2F;
+  --teal:#0F8C8E;
+  --teal-deep:#0B6A6C;
+  --teal-soft:#149FA1;
+  --green:#4CB944;
+  --green-deep:#3A9B33;
+  --paper:#F2F7F7;
+  --paper-2:#FFFFFF;
   --white:#FFFFFF;
   --wa:#1FA855;
-  --line:rgba(13,38,44,.14);
-  --muted:#4D6169;
+  --line:rgba(10,46,47,.13);
+  --muted:#4A6E6F;
 
-  --display:'Fraunces',Georgia,serif;
-  --body:'Public Sans',system-ui,sans-serif;
+  /* legacy aliases kept so existing rules resolve */
+  --petrol:#0F8C8E;
+  --petrol-soft:#149FA1;
+  --brass:#3A9B33;
+  --brass-lite:#7BD46F;
+
+  --display:'Poppins',system-ui,sans-serif;
+  --body:'Poppins',system-ui,sans-serif;
   --mono:'IBM Plex Mono',monospace;
 
   --maxw:1160px;
   --r:14px;
 }
 html[data-lang="ml"] body{font-family:'Noto Sans Malayalam',var(--body);}
+html[data-lang="ml"] h1,html[data-lang="ml"] h2,html[data-lang="ml"] h3,html[data-lang="ml"] .lede{word-break:break-word;overflow-wrap:anywhere}
+html[data-lang="ml"] .hero h1{font-size:clamp(1.75rem,4.2vw,3rem);line-height:1.35}
+html[data-lang="ml"] .display{line-height:1.4}
+html[data-lang="ml"] .brand span{white-space:normal}
 html[data-lang="ml"] .display{font-family:'Noto Sans Malayalam',var(--display);letter-spacing:0;}
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -67,7 +82,7 @@ body{
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
-.display{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.08}
+.display{font-family:var(--display);font-weight:700;letter-spacing:-.025em;line-height:1.14}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .eyebrow{
   font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
@@ -84,9 +99,9 @@ header{
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
 .brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);flex-shrink:0}
-.mark{width:38px;height:38px;flex-shrink:0}
-.brand b{font-family:var(--display);font-size:1.32rem;font-weight:700;letter-spacing:-.02em;display:block;line-height:1.1}
-.brand span{font-family:var(--mono);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.mark{width:48px;height:43px;flex-shrink:0;object-fit:contain;display:block}
+.brand b{font-family:var(--display);font-size:1.28rem;font-weight:800;letter-spacing:.005em;display:block;line-height:1.05;color:var(--teal);text-transform:uppercase}
+.brand span{font-family:var(--display);font-weight:400;font-size:.58rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
 .navlinks{display:flex;gap:28px;align-items:center}
 .navlinks a{color:var(--petrol);text-decoration:none;font-size:.92rem;font-weight:500;opacity:.85}
 .navlinks a:hover{opacity:1;color:var(--brass)}
@@ -167,7 +182,7 @@ html[data-lang="ml"] .op-head h3{text-transform:none;letter-spacing:0;font-famil
 .rate{font-family:var(--mono);font-size:1.28rem;font-weight:600;color:var(--petrol);text-align:right;line-height:1.1}
 .rate small{display:block;font-size:.62rem;letter-spacing:.1em;opacity:.6;font-weight:400;margin-top:3px}
 .blob{width:26px;height:26px;border-radius:7px;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;font-family:var(--mono);font-size:.7rem;font-weight:600;color:var(--petrol);flex-shrink:0}
-.offer.best .blob{background:var(--brass-lite);border-color:var(--brass-lite);color:#3a2a05}
+.offer.best .blob{background:var(--brass-lite);border-color:var(--brass-lite);color:#0A3D07}
 .besttag{
   position:absolute;top:-9px;right:14px;background:var(--brass);color:#fff;
   font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;
@@ -193,19 +208,20 @@ section{padding:88px 0}
 
 /* ---------- PROCESS ---------- */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
-.step{padding:30px 26px 30px 0;border-right:1px solid var(--line);position:relative}
-.step:last-child{border-right:0;padding-right:0}
-.step:not(:last-child){padding-right:26px}
+.step{padding:34px 34px 34px 34px;border-left:1px solid var(--line);position:relative}
+.step:first-child{border-left:0;padding-left:0}
+.step:last-child{padding-right:0}
 .stepnum{
-  font-family:var(--mono);font-size:.72rem;color:var(--brass);letter-spacing:.14em;
-  display:block;margin-bottom:14px;font-weight:600
+  font-family:var(--mono);font-size:.7rem;color:var(--green-deep);letter-spacing:.14em;
+  display:block;margin-bottom:16px;font-weight:600
 }
-.step h3{font-family:var(--display);font-size:1.22rem;margin-bottom:9px;font-weight:600}
-.step p{font-size:.92rem;color:var(--muted)}
+.step h3{font-family:var(--display);font-size:1.16rem;margin-bottom:11px;font-weight:600;line-height:1.3}
+.step p{font-size:.9rem;color:var(--muted);line-height:1.65;max-width:30ch}
 .step:after{
-  content:"";position:absolute;top:-1px;left:0;width:0;height:3px;background:var(--brass);
+  content:"";position:absolute;top:-1px;left:34px;width:0;height:3px;background:var(--green);
   transition:width .5s ease
 }
+.step:first-child:after{left:0}
 .step.seen:after{width:38px}
 
 /* ---------- LOANS ---------- */
@@ -237,7 +253,7 @@ section{padding:88px 0}
 .field{margin-bottom:17px}
 .field label{display:block;font-size:.8rem;font-weight:600;margin-bottom:7px;color:var(--petrol)}
 .field input,.field select{
-  width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;
+  width:100%;padding:13px 14px;font-size:16px;border:1px solid var(--line);border-radius:10px;
   font-family:inherit;font-size:.95rem;background:var(--paper-2);color:var(--ink)
 }
 html[data-lang="ml"] .field input,html[data-lang="ml"] .field select{font-family:'Noto Sans Malayalam',sans-serif}
@@ -274,10 +290,10 @@ details[open] summary:after{content:"–"}
 details p{margin-top:12px;color:var(--muted);font-size:.95rem;max-width:70ch}
 
 /* ---------- CONTACT ---------- */
-.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
 .ccard{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:30px}
 .ccard .eyebrow{margin-bottom:12px;display:block}
-.ccard a{color:var(--petrol);text-decoration:none;font-weight:600;font-size:1.12rem;display:block;margin-bottom:6px}
+.ccard a{color:var(--petrol);text-decoration:none;font-weight:600;font-size:1.12rem;display:block;margin-bottom:6px;padding:6px 0;min-height:44px;line-height:1.8}
 .ccard a:hover{color:var(--brass)}
 .ccard p{font-size:.88rem;color:var(--muted)}
 .mapbox{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);height:100%;min-height:240px;background:var(--white)}
@@ -291,7 +307,8 @@ html[data-lang="ml"] footer h4{font-family:'Noto Sans Malayalam',sans-serif;text
 footer a{color:rgba(237,238,231,.62);text-decoration:none;display:block;margin-bottom:9px}
 footer a:hover{color:var(--brass-lite)}
 .disclaimer{border-top:1px solid rgba(237,238,231,.14);padding-top:22px;font-size:.76rem;line-height:1.6;color:rgba(237,238,231,.45)}
-.footbrand b{font-family:var(--display);color:var(--paper);font-size:1.35rem;display:block;margin-bottom:10px}
+.footbrand b{font-family:var(--display);font-weight:800;color:#fff;font-size:1.4rem;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.01em}
+.foottag{display:block;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:14px;font-weight:400}
 
 /* ---------- FLOAT ---------- */
 .floatwa{
@@ -315,7 +332,9 @@ footer a:hover{color:var(--brass-lite)}
 @media(max-width:980px){
   .herogrid,.checkwrap{grid-template-columns:1fr;gap:40px}
   .steps{grid-template-columns:1fr 1fr}
-  .step{border-right:0;border-bottom:1px solid var(--line);padding-right:26px!important}
+  .step{border-left:0;border-bottom:1px solid var(--line);padding:28px 0!important}
+  .step:after{left:0!important}
+  .step p{max-width:46ch}
   .loangrid{grid-template-columns:1fr 1fr}
   .whygrid,.contactgrid,.footgrid{grid-template-columns:1fr}
   .feestrip{grid-template-columns:1fr;padding:34px 28px}
@@ -343,7 +362,41 @@ footer a:hover{color:var(--brass-lite)}
   .rv{opacity:1;transform:none}
   .offer{opacity:1;transform:none}
 }
-:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:4px}
+
+/* ---------- SMALL PHONE HARDENING ---------- */
+@media(max-width:640px){
+  .nav{height:64px;gap:10px}
+  .mark{width:38px;height:34px}
+  .brand b{font-size:1.02rem}
+  .brand span{display:none}            /* tagline would overflow; it reappears in the footer */
+  .langtoggle button{padding:6px 10px;font-size:.72rem}
+  .btn{padding:11px 16px}
+}
+@media(max-width:400px){
+  .wrap{padding:0 16px}
+  .brand b{font-size:.92rem}
+  .mark{width:32px;height:29px}
+  .navright{gap:7px}
+  .hero h1{font-size:1.92rem}
+  .rate{font-size:1.08rem}
+  .offer{padding:13px 12px;gap:9px}
+  .op-head{flex-direction:column;gap:6px}
+  .feestrip{padding:28px 20px}
+  .ccard{padding:22px 18px}
+  .floatwa{width:52px;height:52px;right:14px;bottom:14px}
+}
+@media(max-width:360px){
+  .brand span,.langtoggle{display:none}  /* language switch moves to footer at this size */
+  .footlang{display:flex!important}
+}
+.footlang{display:none;gap:8px;margin-top:18px}
+.footlang button{
+  border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;
+  padding:7px 14px;border-radius:99px;cursor:pointer;font-family:inherit;font-size:.8rem
+}
+.footlang button[aria-pressed="true"]{background:var(--green);border-color:var(--green)}
+
+:focus-visible{outline:2px solid var(--green-deep);outline-offset:3px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -352,14 +405,10 @@ footer a:hover{color:var(--brass-lite)}
 <header>
   <div class="wrap nav">
     <a href="#top" class="brand">
-      <svg class="mark" viewBox="0 0 44 44" fill="none" aria-hidden="true">
-        <rect width="44" height="44" rx="12" fill="#12414A"/>
-        <path d="M11 13v18h7.5" fill="none" stroke="#E3B65C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M22 31V15.5l5.5 7 5.5-7V31" fill="none" stroke="#E3B65C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <img class="mark" src="logo.svg" alt="Loan Master logo" width="48" height="43">
       <span style="display:block">
         <b>Loan Master</b>
-        <span data-en="Loan Advisory · Thrissur" data-ml="ലോൺ അഡ്വൈസറി · തൃശൂർ">Loan Advisory · Thrissur</span>
+        <span data-en="The Complete Loan Solutions" data-ml="സമ്പൂർണ്ണ ലോൺ പരിഹാരങ്ങൾ">The Complete Loan Solutions</span>
       </span>
     </a>
 
@@ -376,7 +425,7 @@ footer a:hover{color:var(--brass-lite)}
         <button type="button" data-setlang="en" aria-pressed="true">EN</button>
         <button type="button" data-setlang="ml" aria-pressed="false">മല</button>
       </div>
-      <a href="tel:+917356043958" class="btn btn-call">
+      <a href="tel:+918594010800" class="btn btn-call">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
         <span data-en="Call now" data-ml="വിളിക്കൂ">Call now</span>
       </a>
@@ -406,7 +455,7 @@ footer a:hover{color:var(--brass-lite)}
 
       <div class="trustrow">
         <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 3.8 9.3 9 10 5.2-.7 9-5 9-10V6z"/><path d="m9 12 2 2 4-4"/></svg><span data-en="Registered DSA partner" data-ml="രജിസ്റ്റേഡ് DSA പങ്കാളി">Registered DSA partner</span></div>
-        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span data-en="Fee told upfront, in writing" data-ml="ഫീസ് മുൻകൂട്ടി, എഴുതി നൽകും">Fee told upfront, in writing</span></div>
+        <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span data-en="No fee unless the loan is approved" data-ml="ലോൺ ലഭിച്ചാൽ മാത്രം ഫീസ്">No fee unless the loan is approved</span></div>
         <div><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span data-en="Malayalam & English support" data-ml="മലയാളത്തിലും ഇംഗ്ലീഷിലും സഹായം">Malayalam &amp; English support</span></div>
       </div>
     </div>
@@ -586,7 +635,7 @@ footer a:hover{color:var(--brass-lite)}
       <ul class="checkpoints">
         <li>
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          <div><b data-en="The check itself is free" data-ml="പരിശോധന പൂർണ്ണമായും സൗജന്യം">The check itself is free</b><span data-en="You pay only if you decide to go ahead with an application." data-ml="അപേക്ഷ നൽകാൻ തീരുമാനിച്ചാൽ മാത്രം ഫീസ്.">You pay only if you decide to go ahead with an application.</span></div>
+          <div><b data-en="The check itself is free" data-ml="പരിശോധന പൂർണ്ണമായും സൗജന്യം">The check itself is free</b><span data-en="You pay only after the loan is sanctioned and disbursed." data-ml="ലോൺ അനുവദിച്ച് തുക ലഭിച്ചതിന് ശേഷം മാത്രം ഫീസ്.">You pay only after the loan is sanctioned and disbursed.</span></div>
         </li>
         <li>
           <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
@@ -657,12 +706,12 @@ footer a:hover{color:var(--brass-lite)}
   <div class="wrap">
     <div class="feestrip rv">
       <div>
-        <h2 class="display" data-en="One small service fee. Told to you before we start." data-ml="ഒരു ചെറിയ സേവന ഫീസ്. തുടങ്ങും മുൻപേ പറയും.">One small service fee. Told to you before we start.</h2>
-        <p data-en="No hidden cuts, no surprise deductions from your disbursed amount. You'll know the exact figure in writing before a single form is filled — and the eligibility check before that is always free." data-ml="മറഞ്ഞിരിക്കുന്ന കമ്മീഷനില്ല, ലഭിക്കുന്ന തുകയിൽ നിന്ന് അപ്രതീക്ഷിത കിഴിവുകളില്ല. ഒരു ഫോം പൂരിപ്പിക്കും മുൻപ് കൃത്യമായ തുക എഴുതി അറിയിക്കും — അതിന് മുൻപുള്ള യോഗ്യതാ പരിശോധന എപ്പോഴും സൗജന്യമാണ്.">No hidden cuts, no surprise deductions from your disbursed amount. You'll know the exact figure in writing before a single form is filled — and the eligibility check before that is always free.</p>
+        <h2 class="display" data-en="No fee unless your loan is approved." data-ml="ലോൺ ലഭിച്ചില്ലെങ്കിൽ ഒരു ഫീസുമില്ല.">No fee unless your loan is approved.</h2>
+        <p data-en="Nothing to pay for the enquiry, the eligibility check, the bank comparison or the paperwork. Our minimal service fee applies only after the loan is sanctioned and the money reaches you. If it does not come through, you owe us nothing." data-ml="അന്വേഷണത്തിനോ യോഗ്യതാ പരിശോധനയ്ക്കോ ബാങ്ക് താരതമ്യത്തിനോ രേഖകൾ തയ്യാറാക്കുന്നതിനോ ഒരു രൂപ പോലും നൽകേണ്ടതില്ല. ലോൺ അനുവദിച്ച് തുക നിങ്ങൾക്ക് ലഭിച്ചതിന് ശേഷം മാത്രമാണ് ഞങ്ങളുടെ ചെറിയ സേവന ഫീസ്. ലോൺ ലഭിച്ചില്ലെങ്കിൽ നിങ്ങൾ ഒന്നും നൽകേണ്ടതില്ല.">Nothing to pay for the enquiry, the eligibility check, the bank comparison or the paperwork. Our minimal service fee applies only after the loan is sanctioned and the money reaches you. If it does not come through, you owe us nothing.</p>
       </div>
-      <a href="#" class="btn btn-wa" data-wa="Hi Loan Master, could you tell me your service charges?">
+      <a href="#" class="btn btn-wa" data-wa="Hi Loan Master, I would like to start a free loan enquiry.">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.7 1-.9 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5v-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3 3 0 0 0-1 2.2 5.3 5.3 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.5 1.5.6a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2zM12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2z"/></svg>
-        <span data-en="Ask our charges" data-ml="ഫീസ് അറിയാൻ">Ask our charges</span>
+        <span data-en="Start free enquiry" data-ml="സൗജന്യ അന്വേഷണം">Start free enquiry</span>
       </a>
     </div>
   </div>
@@ -691,7 +740,7 @@ footer a:hover{color:var(--brass-lite)}
       </details>
       <details>
         <summary><span data-en="What do you charge?" data-ml="നിങ്ങളുടെ ഫീസ് എത്രയാണ്?">What do you charge?</span></summary>
-        <p data-en="A minimal service fee that depends on the loan type and the work involved. The eligibility check and the comparison are free — the fee only applies if you choose to go ahead, and we tell you the exact amount before anything is filed." data-ml="ലോൺ തരവും ജോലിയുടെ അളവും അനുസരിച്ചുള്ള ഒരു ചെറിയ സേവന ഫീസ്. യോഗ്യതാ പരിശോധനയും താരതമ്യവും സൗജന്യമാണ് — മുന്നോട്ട് പോകാൻ തീരുമാനിച്ചാൽ മാത്രം ഫീസ്, അതും കൃത്യമായ തുക മുൻകൂട്ടി അറിയിച്ചിട്ട്.">A minimal service fee that depends on the loan type and the work involved. The eligibility check and the comparison are free — the fee only applies if you choose to go ahead, and we tell you the exact amount before anything is filed.</p>
+        <p data-en="Nothing upfront, ever. The enquiry, eligibility check, bank comparison and paperwork are all free. A minimal service fee is payable only once the loan is sanctioned and disbursed — and the amount is told to you in advance. If the loan does not come through, there is no charge at all." data-ml="മുൻകൂറായി ഒന്നുമില്ല. അന്വേഷണം, യോഗ്യതാ പരിശോധന, ബാങ്ക് താരതമ്യം, രേഖകൾ എന്നിവയെല്ലാം സൗജന്യമാണ്. ലോൺ അനുവദിച്ച് തുക ലഭിച്ചതിന് ശേഷം മാത്രമാണ് ചെറിയ സേവന ഫീസ് — ആ തുക മുൻകൂട്ടി അറിയിക്കും. ലോൺ ലഭിച്ചില്ലെങ്കിൽ ഒരു ചാർജും ഇല്ല.">Nothing upfront, ever. The enquiry, eligibility check, bank comparison and paperwork are all free. A minimal service fee is payable only once the loan is sanctioned and disbursed — and the amount is told to you in advance. If the loan does not come through, there is no charge at all.</p>
       </details>
       <details>
         <summary><span data-en="I live outside Thrissur. Can you still help?" data-ml="ഞാൻ തൃശൂരിന് പുറത്താണ്. സഹായിക്കാൻ കഴിയുമോ?">I live outside Thrissur. Can you still help?</span></summary>
@@ -717,17 +766,20 @@ footer a:hover{color:var(--brass-lite)}
       <div style="display:grid;gap:22px">
         <div class="ccard">
           <span class="eyebrow" data-en="Phone" data-ml="ഫോൺ">Phone</span>
+          <a href="tel:+918594010800">+91 85940 10800</a>
+          <a href="tel:+918592010800">+91 85920 10800</a>
           <a href="tel:+917356043958">+91 73560 43958</a>
           <p data-en="Monday – Saturday, 9:30 am to 7:00 pm" data-ml="തിങ്കൾ – ശനി, രാവിലെ 9:30 മുതൽ വൈകിട്ട് 7:00 വരെ">Monday – Saturday, 9:30 am to 7:00 pm</p>
         </div>
         <div class="ccard">
           <span class="eyebrow" data-en="Office" data-ml="ഓഫീസ്">Office</span>
           <p style="font-size:1rem;color:var(--ink);line-height:1.7">
-            Loan Master — Loan Advisory<br>
+            Loan Master<br>
             2nd Floor, Kalliyath Royal Square<br>
             Palace Road, Chembukkav<br>
             Thrissur, Kerala 680020
           </p>
+          <p style="margin-top:12px" data-en="Adarsh T S — Managing Director" data-ml="ആദർശ് ടി എസ് — മാനേജിംഗ് ഡയറക്ടർ">Adarsh T S — Managing Director</p>
           <a href="https://maps.app.goo.gl/" target="_blank" rel="noopener" style="font-size:.92rem;margin-top:14px" data-en="Get directions →" data-ml="വഴി കാണിക്കൂ →">Get directions →</a>
         </div>
       </div>
@@ -750,7 +802,8 @@ footer a:hover{color:var(--brass-lite)}
     <div class="footgrid">
       <div class="footbrand">
         <b>Loan Master</b>
-        <p data-en="An independent loan advisory in Thrissur, Kerala. We compare lenders on your behalf so you borrow on better terms." data-ml="തൃശൂരിലെ ഒരു സ്വതന്ത്ര ലോൺ അഡ്വൈസറി. മികച്ച നിബന്ധനകളിൽ വായ്പ ലഭിക്കാൻ നിങ്ങൾക്കായി ബാങ്കുകളെ താരതമ്യം ചെയ്യുന്നു.">An independent loan advisory in Thrissur, Kerala. We compare lenders on your behalf so you borrow on better terms.</p>
+        <span class="foottag" data-en="The Complete Loan Solutions" data-ml="സമ്പൂർണ്ണ ലോൺ പരിഹാരങ്ങൾ">The Complete Loan Solutions</span>
+        <p data-en="An independent loan consultancy in Thrissur, Kerala. We compare lenders on your behalf so you borrow on better terms." data-ml="തൃശൂരിലെ ഒരു സ്വതന്ത്ര ലോൺ കൺസൾട്ടൻസി. മികച്ച നിബന്ധനകളിൽ വായ്പ ലഭിക്കാൻ നിങ്ങൾക്കായി ബാങ്കുകളെ താരതമ്യം ചെയ്യുന്നു.">An independent loan consultancy in Thrissur, Kerala. We compare lenders on your behalf so you borrow on better terms.</p>
       </div>
       <div>
         <h4 data-en="Loans" data-ml="വായ്പകൾ">Loans</h4>
@@ -768,8 +821,12 @@ footer a:hover{color:var(--brass-lite)}
       </div>
     </div>
 
+    <div class="footlang" role="group" aria-label="Language">
+      <button type="button" data-setlang="en" aria-pressed="true">English</button>
+      <button type="button" data-setlang="ml" aria-pressed="false">മലയാളം</button>
+    </div>
     <div class="disclaimer">
-      <p data-en="Loan Master is a loan consultancy and registered Direct Selling Agent. We are not a bank, NBFC or lender, and we do not lend money or accept deposits. All loans are sanctioned solely at the discretion of the partner bank or NBFC, subject to their eligibility criteria and documentation. Interest rates and figures shown on this site are illustrative and do not constitute an offer. Service charges are disclosed to the customer in advance." data-ml="ലോൺ മാസ്റ്റർ ഒരു ലോൺ കൺസൾട്ടൻസിയും രജിസ്റ്റേഡ് ഡയറക്ട് സെല്ലിംഗ് ഏജന്റുമാണ്. ഞങ്ങൾ ബാങ്കോ NBFC-യോ വായ്പാ ദാതാവോ അല്ല; പണം വായ്പ നൽകുകയോ നിക്ഷേപം സ്വീകരിക്കുകയോ ചെയ്യുന്നില്ല. എല്ലാ വായ്പകളും പങ്കാളി ബാങ്കിന്റെയോ NBFC-യുടെയോ യോഗ്യതാ മാനദണ്ഡങ്ങൾക്കും രേഖകൾക്കും വിധേയമായി അവരുടെ വിവേചനാധികാരത്തിലാണ് അനുവദിക്കുന്നത്. ഈ സൈറ്റിലെ പലിശ നിരക്കുകളും കണക്കുകളും ഉദാഹരണങ്ങൾ മാത്രമാണ്, ഒരു ഓഫർ അല്ല. സേവന ഫീസ് ഉപഭോക്താവിനെ മുൻകൂട്ടി അറിയിക്കുന്നതാണ്.">Loan Master is a loan consultancy and registered Direct Selling Agent. We are not a bank, NBFC or lender, and we do not lend money or accept deposits. All loans are sanctioned solely at the discretion of the partner bank or NBFC, subject to their eligibility criteria and documentation. Interest rates and figures shown on this site are illustrative and do not constitute an offer. Service charges are disclosed to the customer in advance.</p>
+      <p data-en="Loan Master is a loan consultancy and registered Direct Selling Agent. We are not a bank, NBFC or lender, and we do not lend money or accept deposits. All loans are sanctioned solely at the discretion of the partner bank or NBFC, subject to their eligibility criteria and documentation. Interest rates and figures shown on this site are illustrative and do not constitute an offer. No upfront charges are collected; our service fee becomes payable only after a loan is sanctioned and disbursed, and the amount is disclosed to the customer in advance." data-ml="ലോൺ മാസ്റ്റർ ഒരു ലോൺ കൺസൾട്ടൻസിയും രജിസ്റ്റേഡ് ഡയറക്ട് സെല്ലിംഗ് ഏജന്റുമാണ്. ഞങ്ങൾ ബാങ്കോ NBFC-യോ വായ്പാ ദാതാവോ അല്ല; പണം വായ്പ നൽകുകയോ നിക്ഷേപം സ്വീകരിക്കുകയോ ചെയ്യുന്നില്ല. എല്ലാ വായ്പകളും പങ്കാളി ബാങ്കിന്റെയോ NBFC-യുടെയോ യോഗ്യതാ മാനദണ്ഡങ്ങൾക്കും രേഖകൾക്കും വിധേയമായി അവരുടെ വിവേചനാധികാരത്തിലാണ് അനുവദിക്കുന്നത്. ഈ സൈറ്റിലെ പലിശ നിരക്കുകളും കണക്കുകളും ഉദാഹരണങ്ങൾ മാത്രമാണ്, ഒരു ഓഫർ അല്ല. മുൻകൂർ ചാർജുകൾ ഈടാക്കുന്നില്ല; ലോൺ അനുവദിച്ച് തുക ലഭിച്ചതിന് ശേഷം മാത്രമാണ് സേവന ഫീസ്, ആ തുക ഉപഭോക്താവിനെ മുൻകൂട്ടി അറിയിക്കുന്നതാണ്.">Loan Master is a loan consultancy and registered Direct Selling Agent. We are not a bank, NBFC or lender, and we do not lend money or accept deposits. All loans are sanctioned solely at the discretion of the partner bank or NBFC, subject to their eligibility criteria and documentation. Interest rates and figures shown on this site are illustrative and do not constitute an offer. No upfront charges are collected; our service fee becomes payable only after a loan is sanctioned and disbursed, and the amount is disclosed to the customer in advance.</p>
       <p style="margin-top:14px">© <span id="yr"></span> Loan Master, Thrissur.</p>
     </div>
   </div>
@@ -781,7 +838,7 @@ footer a:hover{color:var(--brass-lite)}
 
 <script>
 /* ====== EDIT THIS ONE LINE: WhatsApp number, country code, no + or spaces ====== */
-const WA_NUMBER = "917356043958";
+const WA_NUMBER = "918594010800";
 /* ============================================================================== */
 
 const waLink = (msg) => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
